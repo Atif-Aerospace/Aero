@@ -1,0 +1,221 @@
+=====================================================================================
+||                               Wing Definition Summary                           ||
+=====================================================================================
+
+================================ Planform Specification =============================
+
+wing_area_trap               = 371.674706     (Dependent)       (Trapezoid part of the wing in Wimpress defintion)
+wing_area_wpref              = 383.740000     (Independent)       (Reference area based on Wimpress defintion)
+wing_area_geo                = 411.892352     (Dependent)       (Gross area based on the entire geometry)
+wing_area_asref              = 414.496809     (Dependent)       (Computed by OpenAeroStruct VLMGeometry component)
+aspect_ratio_trap            = 10.324620       (Dependent)       (Aspect ratio of the trapezoid part in Wimpress defintion)
+aspect_ratio_wpref           = 10.000000       (Independent)       (Aspect ratio based on Wimpress reference area)
+aspect_ratio_geo             = 9.316512       (Dependent)
+entire_span                  = 61.946751      (Dependent)
+half_span                    = 30.973376      (Dependent)
+body_side_ratio              = 0.100000       (Independent)
+kink_location_ratio          = 0.370000       (Independent)
+kink_location                = 11.460149      (Dependent)
+taper_ratio_trap             = 0.275000       (Independent)       (Taper ratio of the trapezoid part in Wimpress defintion)
+taper_ratio_t_r              = 0.200310       (Dependent)
+taper_ratio_k_r              = 0.533006       (Dependent)
+root_chord_extension_ratio   = 1.372874       (Independent)       (Actual root chord / Root chord of the trapezoid part)
+root_chord_trap              = 9.411618       (Dependent)       (Root chord of the trapezoid part in Wimpress defintion)
+root_chord                   = 12.920965      (Dependent)
+kink_chord                   = 6.886951       (Dependent)
+tip_chord                    = 2.588195       (Dependent)
+trap_quarter_sweep           = 35.000000      (Independent)
+inboard_quarter_sweep        = 31.949814      (Dependent)
+outboard_quarter_sweep       = 35.000000      (Dependent)
+inboard_LE_sweep             = 37.063110      (Dependent)
+outboard_LE_sweep            = 37.063110      (Dependent)
+
+============================ 3D allocation of the sections ==========================
+
+twist_cp (from tip to root):
+[-3.000000, 0.000000, 3.000000]
+
+Actual_twist [deg] (from tip to root):
+[[-3.000000, -2.000000, -1.000000, 0.000000, 1.000000, 2.000000, 3.000000]]
+
+t_over_c_cp (from tip to root):
+[0.150000, 0.150000, 0.150000]
+
+Actual_t_over_c (from tip to root):
+[[0.150000, 0.150000, 0.150000, 0.150000, 0.150000, 0.150000]]
+
+
+=================================== Initial Mesh =====================================
+this is the mesh (from tip to root) from the wing planform definition (no twist and dihedral)
+
+mesh_initial_left_x:
+[[23.393647, 19.709147, 16.024648, 12.340149, 8.655649, 4.327825,
+  0.000000],
+ [24.687744, 21.540589, 18.393435, 15.246280, 12.099125, 9.279804,
+  6.460483],
+ [25.981842, 23.372031, 20.762221, 18.152411, 15.542601, 14.231783,
+  12.920965]]
+
+mesh_initial_left_y:
+[[-30.973376, -26.095069, -21.216762, -16.338456, -11.460149, -5.730074,
+  -0.000000],
+ [-30.973376, -26.095069, -21.216762, -16.338456, -11.460149, -5.730074,
+  -0.000000],
+ [-30.973376, -26.095069, -21.216762, -16.338456, -11.460149, -5.730074,
+  -0.000000]]
+
+mesh_initial_left_z:
+[[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000],
+ [0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000],
+ [0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000]]
+
+
+============================== Undeformed Mesh =====================================
+Mesh (from tip to root) after twist and dihedral?, no structural deformation
+
+mesh_undeformed_left_x:
+[[23.394534, 19.709705, 16.024828, 12.340149, 8.655912, 4.329333,
+  0.004427],
+ [24.686858, 21.540032, 18.393254, 15.246280, 12.098863, 9.278296,
+  6.456056],
+ [25.979181, 23.370358, 20.761680, 18.152411, 15.541814, 14.227258,
+  12.907685]]
+
+mesh_undeformed_left_y:
+[[-30.974262, -26.095906, -21.217303, -16.338456, -11.459362, -5.727813,
+  0.000000],
+ [-30.972489, -26.094232, -21.216221, -16.338456, -11.460936, -5.732336,
+  0.000000],
+ [-30.970716, -26.092559, -21.215139, -16.338456, -11.462509, -5.736860,
+  0.000000]]
+
+mesh_undeformed_left_z:
+[[0.777214, 0.651376, 0.534917, 0.427838, 0.330133, 0.236428, 0.169058],
+ [0.844919, 0.715271, 0.576244, 0.427838, 0.270056, 0.063666, -0.169058],
+ [0.912623, 0.779165, 0.617571, 0.427838, 0.209980, -0.109096, -0.507173]]
+
+
+========================= Displacement at Each Mesh Point ============================
+
+displacement pre-defined at three points on the leading edge, from TIP to ROOT
+
+delta_x_LE:
+[0.009000, 0.004000, 0.001000]
+
+delta_y_LE:
+[0.000090, 0.000040, 0.000010]
+
+delta_z_LE:
+[0.090000, 0.040000, 0.010000]
+
+displacement pre-defined at three points on the trailing edge, from TIP to ROOT
+
+delta_x_TE:
+[0.009000, 0.004000, 0.001000]
+
+delta_y_TE:
+[0.000090, 0.000040, 0.000010]
+
+delta_z_TE:
+[0.090000, 0.040000, 0.010000]
+displacement at each mesh point (from tip to root) due to structural deformation, in this aerodynamic analysis,
+this is either from the results of structural analysis or manually added by using the spline line
+the latter can be used for model reversal
+
+mesh_delta_x:
+[[0.278768, 0.197873, 0.130804, 0.077565, 0.038156, 0.009533, -0.000000],
+ [0.278752, 0.197859, 0.130798, 0.077569, 0.038169, 0.009548, -0.000000],
+ [0.278736, 0.197845, 0.130793, 0.077573, 0.038181, 0.009564, -0.000000]]
+
+mesh_delta_y:
+[[0.002788, 0.001979, 0.001308, 0.000776, 0.000382, 0.000095, -0.000000],
+ [0.002788, 0.001979, 0.001308, 0.000776, 0.000382, 0.000095, -0.000000],
+ [0.002787, 0.001978, 0.001308, 0.000776, 0.000382, 0.000096, -0.000000]]
+
+mesh_delta_z:
+[[2.787684, 1.978729, 1.308043, 0.775646, 0.381560, 0.095328, -0.000000],
+ [2.787524, 1.978588, 1.307984, 0.775690, 0.381686, 0.095484, -0.000000],
+ [2.787364, 1.978448, 1.307926, 0.775735, 0.381813, 0.095640, -0.000000]]
+
+
+======================= Actual Mesh Used in Aerodynamics Analysis ===================
+
+mesh (from tip to root) after the structural deformation, this mesh will be used in the actual aerodynamics analysis
+should be the same as input_var.def_mesh, aeropoint_group.wing.def_mesh, aeropoint_group.aero_states.wing_def_mesh, and loadtransfer_group.def_mesh
+
+mesh_deformed_x:
+[[23.673302, 19.907578, 16.155633, 12.417713, 8.694068, 4.338866,
+  0.004427],
+ [24.965610, 21.737890, 18.524053, 15.323849, 12.137031, 9.287844,
+  6.456056],
+ [26.257918, 23.568203, 20.892473, 18.229984, 15.579995, 14.236822,
+  12.907685]]
+
+mesh_deformed_y:
+[[-30.971474, -26.093927, -21.215995, -16.337680, -11.458981, -5.727717,
+  -0.000000],
+ [-30.969702, -26.092254, -21.214913, -16.337680, -11.460554, -5.732241,
+  -0.000000],
+ [-30.967929, -26.090581, -21.213831, -16.337680, -11.462127, -5.736765,
+  -0.000000]]
+
+mesh_deformed_z:
+[[3.564898, 2.630105, 1.842960, 1.203484, 0.711692, 0.331756, 0.169058],
+ [3.632443, 2.693859, 1.884228, 1.203528, 0.651743, 0.159150, -0.169058],
+ [3.699988, 2.757613, 1.925496, 1.203572, 0.591793, -0.013456, -0.507173]]
+
+
+================================== Assumed Variables ================================
+
+CL0                      = 0.000000
+CD0                      = 0.015000
+k_lam                    = 0.050000
+c_max_t                  = 0.303000
+fem_origin               = 0.350000
+
+=====================================================================================
+||                            Aerodynamic Analysis Results                         ||
+=====================================================================================
+
+=============================== Lift and Drag ======================================
+
+L_Wing                   = 2195038.756169
+D_Wing                   = 33641.043211
+
+================================ Coefficients ======================================
+
+CL_Wing_total            = 0.452676
+CD_Wing_induced          = 0.006938
+CD_Wing_viscous          = 0.011316
+CD_Wing_wave             = 0.004396
+CD_Wing_total            = 0.037650
+CM_Wing_roll             = 0.000000
+CM_Wing_pitch            = -0.520747
+CM_Wing_yaw              = 0.000000
+Lift_over_Drag           = 12.023366
+
+======================================= Loads ======================================
+
+loads_Fx [N]:
+[-3003.180639, -7998.832717, -11909.474444, -15414.540373, -18476.666692,
+ -16035.927978, -6059.979292]
+
+loads_Fy [N]:
+[3238.445076, 7426.821180, 8541.287303, 8069.390362, 7581.041509,
+ 6636.254304, 2771.691958]
+
+loads_Fz [N]:
+[28266.285944, 76113.929937, 117305.301051, 162265.203098, 234677.121793,
+ 309025.362242, 167155.786489]
+
+loads_Mx:
+[70465.357436, 47929.415478, 52463.007106, 56511.854907, 180267.279621,
+ 72956.094167, -478754.037222]
+
+loads_My:
+[58115.179667, 62103.555899, 92563.201593, 133356.453434, 251162.555161,
+ 325199.578137, -102722.308333]
+
+loads_Mz:
+[1287.985218, 2295.708845, 4452.200617, 7971.274775, 17124.345079,
+ 9529.707752, -788.918909]
