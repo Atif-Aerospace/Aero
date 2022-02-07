@@ -14,7 +14,7 @@ MarkupSafe==2.0.1
 matplotlib==3.5.1
 networkx==2.6.3
 numpy==1.21.5
--e git+https://github.com/mdolab/OpenAeroStruct.git@e2e3c848687d73710267ef1e30b125f404aa20f3#egg=openaerostruct
+git+https://github.com/mdolab/OpenAeroStruct.git@e2e3c848687d73710267ef1e30b125f404aa20f3#egg=openaerostruct
 openmdao==3.16.0
 packaging==21.3
 Pillow==9.0.1
